@@ -9,7 +9,30 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) 
+{
+    #desktop-nav, section, footer {
+        margin-left: 0 !important;
+    }
+
+    .sidebar {
+        position: fixed !important;
+        top: 0;
+        left: -260px;
+        width: 240px !important;
+        height: 100vh;
+        background-color: #ffffff;
+        border-right: 1px solid rgb(163, 163, 163) !important;
+        border-bottom: none !important;
+        padding: 2rem 1.5rem !important;
+        transition: left 0.3s ease-in-out;
+        z-index: 200;
+    }
+
+    .sidebar.open{
+        left: 0;
+    }
+    
     #desktop-nav {
         display: none;
     }

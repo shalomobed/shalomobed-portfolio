@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shalom Obed</title>
+    <link rel="icon" href="images/about-pic.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Shalom Obed</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Shalom Obed</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+            </div>
+        </div>
+    </nav>
+    <!-- <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/intro-pic2.jpg" alt="Shalom Obed profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm </p>
+            <h1 class="title">Shalom Obed</h1>
+            <p class="section__text__p2">Computer Science Student</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/shalom-resume3.pdf')">
+                    Download Resume
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon"
+                    onclick="window.open('https://www.linkedin.com/in/shalomobed/', '_blank')">
+
+                <img src="./assets/github.png" alt="My Github Profile" class="icon"
+                    onclick="window.open('https://github.com/shalomobed', '_blank')">
+            </div>
+        </div>
+    </section> -->
+    <section id="about">
+        <p class="section__text__p1"> Get To Know More</p>
+        <h2 class="title">About Me</h2>
+        <div class="section-container">
+            <aside class="sidebar">
+                <h3>Quick Facts</h3>
+                <ul>
+                    <li>Computer Science Student</li>
+                    <li>Georgia State University</li>
+                    <li>Interested in Software Engineering</li>
+                    <li>HTML, CSS, Python, Javascript</li>
+                </ul>
+            </aside>
+            <div class="section__pic-container">
+                <img src="images/about-pic.png" alt="Profile picture with white background" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="text-container">
+                    <p>I'm a <strong>Computer Science</strong> student at Georgia State University with a
+                        <em>strong</em> <strong> passion</strong> for software engineering and technology.
+                        I've always enjoyed solving problems, thinking analytically, and understanding how technology
+                        works, which led me to pursue a degree in computer science.
+                    </p>
+                    <br>
+                    <p>Through my coursework and <em>personal</em> projects, I've gained experience with
+                        <strong>programming</strong> languages such as Java, Python, and JavaScript while developing
+                        applications and strengthening my problem-solving skills.
+                        I enjoy building projects that challenge me to learn <em>new</em> <strong>technologies</strong>
+                        and apply software development principles in practical ways.
+                    </p>
+                    <br>
+                    <p>Beyond coding, I enjoy helping others solve <em>technical</em> problems and learning how
+                        <strong>software</strong> and <strong>hardware</strong> work together to create effective
+                        solutions.
+                        My goal is to gain hands-on industry experience, continue growing as a developer, and build
+                        <em>innovative</em> software that makes a meaningful impact.
+                    </p>
+                </div>
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./images/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Hobbies</h3>
+                        <ul style="list-style-type:disc;">
+                            <li>Playing sports with friends</li>
+                            <li>Watching movies</li>
+                            <li>Cooking </li>
+                            <li>Eating</li>
+                            <li>Coding</li>
+                        </ul>
+                    </div>
+                    <div class="details-container">
+                        <img src="./images/experience.png" alt="Black and White Education icon" class="icon" />
+                        <h3>Top Goals for 2026</h3>
+                        <ol type="1">
+                            <li>Launch a website</li>
+                            <li>Start a Youtube Channel</li>
+                            <li>Run a marathon</li>
+                            <li>Travel to 3 US states</li>
+                            <li>Earn a coding certificate</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" /> -->
+    </section>
+    <hr>
+    <section id="education">
+        <p class="section__text__p1"></p>
+        <!-- <h2 class="title">Education Timeline</h2> -->
+        <table border="15" width="300" height="250">
+            <caption class="title" style="font-weight: bolder;">Education Timeline</caption>
+            <tr>
+                <th style="font-size: 20px;">Year</th>
+                <th style="font-size: 20px;">Institution</th>
+                <th style="font-size: 20px;">Degree/Achievement</th>
+            </tr>
+            <tr>
+                <td style="font-size: 20px;">2023 - 2027</td>
+                <td style="font-size: 20px;">Georgia State University</td>
+                <td style="font-size: 20px;">Undergraduate Student</td>
+            </tr>
+            <tr>
+                <td style="font-size: 20px;">2016 - 2022</td>
+                <td style="font-size: 20px;">Corona Secondary School</td>
+                <td style="font-size: 20px;">High School Diploma</td>
+            </tr>
+        </table>
+        <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" /> -->
+    </section>
+    <hr>
+    <!-- <section id="experience">
+        <p class="section__text__p1">View My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Technical Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>C Language</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>REST APIs</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Other Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Figma</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Customer Service</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Notion</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3 style="font-size: 1rem;">Communication</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
+    </section> -->
+    <section id="work-experience">
+        <p class="section__text__p1"></p>
+        <h2 class="title"></h2>
+        <div class="section-container">
+            <div class="text-container">
+                <div class="job" style="text-align: center;">
+                    <!-- <div class="section__pic-container" style="text-align: center;">
+                        
+                    </div> -->
+                    <img src="images/hackathon.jpg" alt="Black and White Hackathon picture" class="about-pic" style="text-align: center; width: 70%;"/>
+                    <br><br>
+                </div>
+
+            </div>
+        </div>
+        <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" /> -->
+    </section>
+    <hr>
+    <section id="quote">
+        <p class="section__text__p1">My Favourite</p>
+        <h2 class="title">Quote:</h2>
+        <div class="section-container">
+            <div class="text-container">
+                <div class="job">
+                    <blockquote style="font-size: 30px; font-weight: 900; font-style: italic; text-align: center;">
+                        "Success is not final, <br>Failure is not fatal: <br>It's the courage to continue that counts."
+                    </blockquote>
+                    <h5 style="color:#555555; text-align: right; font-size: 20px;">- Winston Churchill</h5>
+                </div>
+
+            </div>
+        </div>
+        <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" /> -->
+    </section>
+    <!-- <hr>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-1.jpg" alt="Project 1" class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">Life's Too Short</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="window.open('https://devpost.com/software/life-s-too-short', '_blank')">
+                        Devpost
+                    </button>
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="window.open('https://www.youtube.com/watch?v=yyxvk7hUOEQ', '_blank')">
+                        Live Demo
+                    </button>
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="window.open('https://docs.google.com/presentation/d/1LLg1lPMd5Wt2uLilc0vBEzm_o70EBuTM/edit?usp=sharing&ouid=104308467754755762632&rtpof=true&sd=true', '_blank')">
+                        Research Poster
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">Local Mate</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="window.open('https://www.figma.com/proto/EW1bhNSyyLuqIS9WvMlEsq?node-id=0-1&t=G3909KInux1jw0jK-6', '_blank')">
+                        Live Demo
+                    </button>
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="window.open('https://www.canva.com/design/DAGYiN6sVh0/s9qBooP5pbrunA0cJhR-Bg/view?utm_content=DAGYiN6sVh0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb001417887ed', '_blank')">
+                        Presentation
+                    </button>
+                </div>
+            </div> -->
+    <!--
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Three</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/shalomobed'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/shalomobed'">
+                            Live Demo
+                        </button>
+                    </div>
+                -->
+    <!-- </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
+    </section> -->
+    <hr>
+
+    <footer>
+        <section id="contact">
+            <p class="section__text__p1">Get in Touch</p>
+            <h2 class="title">Contact Me</h2>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./images/email.png" alt="Black and White Email icon" class="icon contact-icon" />
+                    <p><a href="mailto:shalom.obed2019@gmail.com">shalom.obed2019@gmail.com</a>
+                    </p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./images/linkedin.png" alt="Black and White LinkedIn icon" class="icon contact-icon" />
+                    <p><a href="http://linkedin.com/in/shalomobed" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./images/github.png" alt="Black and White LinkedIn icon" class="icon contact-icon" />
+                    <p><a href="https://github.com/shalomobed" target="_blank" rel="noopener noreferrer">Github</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li style="font-weight: bolder;">Jump to: </li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#education">Education Timeline</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p style="font-size: 25px;"> &copy; Built by Shalom Obed</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

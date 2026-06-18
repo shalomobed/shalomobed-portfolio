@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shalom Obed</title>
-    <link rel="icon" href="assets/about-pic.png" type="image/png">
+    <link rel="icon" href="images/about-pic.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
@@ -15,10 +15,9 @@
         <div class="logo">Shalom Obed</div>
         <div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
             </ul>
         </div>
     </nav>
@@ -31,21 +30,20 @@
                 <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
             </div>
         </div>
     </nav>
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/intro-pic2.jpg" alt="Shalom Obed profile picture">
+            <img src="./images/intro-pic2.jpg" alt="Profile picture with blue background">
         </div>
         <div class="section__text">
-            <p class="section__text__p1">Hello, I'm </p>
-            <h1 class="title">Shalom Obed</h1>
-            <p class="section__text__p2">Computer Science Student</p>
+            <p class="section__text__p1">Welcome to </p>
+            <h1 class="title">Shalom Obed's</h1>
+            <p class="section__text__p2">Software Engineering Portfolio</p>
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/shalom-resume3.pdf')">
                     Download Resume
@@ -55,35 +53,45 @@
                 </button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon"
+                <img src="./images/linkedin.png" alt="Black and White LinkedIn Profile Picture " class="icon"
                     onclick="window.open('https://www.linkedin.com/in/shalomobed/', '_blank')">
 
-                <img src="./assets/github.png" alt="My Github Profile" class="icon"
+                <img src="./images/github.png" alt="Black and White Github Profile Picture" class="icon"
                     onclick="window.open('https://github.com/shalomobed', '_blank')">
             </div>
         </div>
     </section>
+    <hr>
     <section id="about">
         <p class="section__text__p1"> Get To Know More</p>
-        <h1 class="title">About Me</h1>
+        <h2 class="title">About Me</h2>
         <div class="section-container">
+            <aside class="sidebar">
+                <h3>Quick Facts</h3>
+                <ul>
+                    <li>Computer Science Student</li>
+                    <li>Georgia State University</li>
+                    <li>Interested in Software Engineering</li>
+                    <li>HTML, CSS, Python, Javascript</li>
+                </ul>
+            </aside>
             <div class="section__pic-container">
-                <img src="assets/about-pic.png" alt="Profile picture" class="about-pic" />
+                <img src="images/about-pic.png" alt="Profile picture with white background" class="about-pic" />
             </div>
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <img src="./images/experience.png" alt="Black and White Experience icon" class="icon" />
                         <h3>Experience</h3>
                         <p>~ 1 year<br />Software Engineering</p>
                     </div>
                     <div class="details-container">
-                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <img src="./images/education.png" alt="Black and White Education icon" class="icon" />
                         <h3>Education</h3>
                         <p>Computer Science<br />Georgia State University </p>
                     </div>
                 </div>
-                <div class="text-container">
+                <article class="text-container">
                     <p>
                         I'm a Computer Science student at Georgia State University with a strong passion for software
                         engineering and technology.
@@ -91,12 +99,13 @@
                         My goal is to gain hands-on industry experience through internships and develop innovative
                         solutions that make a meaningful impact.
                     </p>
-                </div>
+                </article>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" />
+        <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" /> -->
     </section>
-    <section id="experience">
+    <hr>
+    <!-- <section id="experience">
         <p class="section__text__p1">View My</p>
         <h1 class="title">Skills</h1>
         <div class="experience-details-container">
@@ -182,17 +191,18 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
-    </section>
+        </div> -->
+        <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" /> -->
+    <!-- </section>
+    <hr> -->
     <section id="work-experience">
         <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
+        <h2 class="title">Experience</h2>
         <div class="section-container">
             <div class="text-container">
-                <div class="job">
+                <article class="job">
                     <h2>GSU EXLAB Makerspace | <i>Student Assistant</i></h2>
-                    <h5 style="color:#555555">May 2026 - Present </h5>
+                    <h3 style="color:#555555">May 2026 - Present </h3>
                     <ul>
                         <li>Facilitate workshops in various maker technologies and skills, including 3D printing,
                             sewing, fabrication, and laser cutting. </li>
@@ -201,11 +211,11 @@
                         <li>Support individuals’ self-learning by assisting them with their projects and answering their
                             questions.</li>
                     </ul>
-                </div>
+                </article>
 
-                <div class="job" style="margin-top: 1rem;">
+                <article class="job" style="margin-top: 1rem;">
                     <h2>GSU Robinson College of Business | <i>Student Technician</i></h2>
-                    <h5 style="color:#555555">April 2024 – September 2024</h5>
+                    <h3 style="color:#555555">April 2024 – September 2024</h3>
                     <ul>
                         <li>Provided technical support for faculty and students, troubleshooting hardware and software
                             issues to ensure seamless classroom technology operation. </li>
@@ -214,11 +224,11 @@
                         <li>Collaborated with the IT team to streamline support processes, reducing response time for
                             support requests by 15% and enhancing system efficiency. </li>
                     </ul>
-                </div>
+                </article>
 
-                <div class="job" style="margin-top: 1rem;">
+                <article class="job" style="margin-top: 1rem;">
                     <h2>New Horizons Computer Learning Centers | <i>IT Intern</i></h2>
-                    <h5 style="color:#555555">July 2022 – August 2022 </h5>
+                    <h3 style="color:#555555">July 2022 – August 2022 </h3>
                     <ul>
                         <li>Facilitated and managed daily inquiries from prospective students, providing tailored
                             program information and enhancing enrollment interest. </li>
@@ -227,52 +237,54 @@
                         <li>Earned recognition from the employer for exceptional service and effective collaboration
                             with staff. </li>
                     </ul>
-                </div>
+                </article>
 
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" />
+        <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" /> -->
     </section>
+    <hr>
     <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
+        <p class="section__text__p1">Featured</p>
+        <h2 class="title">Projects</h2>
         <div class="about-containers">
             <div class="details-container color-container">
                 <div class="article-container">
-                    <img src="./assets/project-1.jpg" alt="Project 1" class="project-img" />
+                    <img src="./images/project-1.jpg" alt="Life's Too Short Project Image" class="project-img" />
                 </div>
-                <h2 class="experience-sub-title project-title">Life's Too Short</h2>
+                <h3 class="experience-sub-title project-title">Life's Too Short</h3>
                 <div class="btn-container">
                     <button class="btn btn-color-2 project-btn"
-                        onclick="window.open('https://devpost.com/software/life-s-too-short', '_blank')">
+                        onclick="window.open('https://devpost.com/software/life-s-too-short', '_blank', 'noopener,noreferrer')">
                         Devpost
                     </button>
-                    <button class="btn btn-color-2 project-btn"
-                        onclick="window.open('https://www.youtube.com/watch?v=yyxvk7hUOEQ', '_blank')">
+                    <!-- <button class="btn btn-color-2 project-btn"
+                        onclick="window.open('https://www.youtube.com/watch?v=yyxvk7hUOEQ', '_blank','noopener,noreferrer')">
                         Live Demo
-                    </button>
+                    </button> -->
                     <button class="btn btn-color-2 project-btn"
-                        onclick="window.open('https://docs.google.com/presentation/d/1LLg1lPMd5Wt2uLilc0vBEzm_o70EBuTM/edit?usp=sharing&ouid=104308467754755762632&rtpof=true&sd=true', '_blank')">
+                        onclick="window.open('https://docs.google.com/presentation/d/1LLg1lPMd5Wt2uLilc0vBEzm_o70EBuTM/edit?usp=sharing&ouid=104308467754755762632&rtpof=true&sd=true', '_blank', 'noopener,noreferrer')">
                         Research Poster
                     </button>
                 </div>
             </div>
             <div class="details-container color-container">
                 <div class="article-container">
-                    <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+                    <img src="./images/project-2.png" alt="Local Mate Project Image" class="project-img" />
                 </div>
-                <h2 class="experience-sub-title project-title">Local Mate</h2>
+                <h3 class="experience-sub-title project-title">Local Mate</h3>
                 <div class="btn-container">
                     <button class="btn btn-color-2 project-btn"
-                        onclick="window.open('https://www.figma.com/proto/EW1bhNSyyLuqIS9WvMlEsq?node-id=0-1&t=G3909KInux1jw0jK-6', '_blank')">
+                        onclick="window.open('https://www.figma.com/proto/EW1bhNSyyLuqIS9WvMlEsq?node-id=0-1&t=G3909KInux1jw0jK-6', '_blank', 'noopener,noreferrer')">
                         Live Demo
                     </button>
                     <button class="btn btn-color-2 project-btn"
-                        onclick="window.open('https://www.canva.com/design/DAGYiN6sVh0/s9qBooP5pbrunA0cJhR-Bg/view?utm_content=DAGYiN6sVh0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb001417887ed', '_blank')">
+                        onclick="window.open('https://www.canva.com/design/DAGYiN6sVh0/s9qBooP5pbrunA0cJhR-Bg/view?utm_content=DAGYiN6sVh0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb001417887ed', '_blank', 'noopener,noreferrer')">
                         Presentation
                     </button>
                 </div>
             </div>
+            
             <!--
                 <div class="details-container color-container">
                     <div class="article-container">
@@ -291,36 +303,48 @@
                     </div>
                 -->
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
-    </section>
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon" />
-                <p><a href="mailto:shalom.obed2019@gmail.com">shalom.obed2019@gmail.com</a>
-                </p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-                <p><a href="http://linkedin.com/in/shalomobed" target="_blank">LinkedIn</a>
-                </p>
-            </div>
+        <div style="display: flex; justify-content: center; margin: 2rem 0;">
+            <iframe width="700" height="400" src="https://www.youtube.com/embed/yyxvk7hUOEQ" title="YouTube video player" allow="autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
+        <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" /> -->
     </section>
+    <hr>
+
     <footer>
+        <section id="contact">
+            <p class="section__text__p1">Get in Touch</p>
+            <h2 class="title">Contact Me</h2>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./images/email.png" alt="Black and White Email icon" class="icon contact-icon" />
+                    <p><a href="mailto:shalom.obed2019@gmail.com">shalom.obed2019@gmail.com</a>
+                    </p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./images/linkedin.png" alt="Black and White LinkedIn icon" class="icon contact-icon" />
+                    <p><a href="http://linkedin.com/in/shalomobed" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./images/github.png" alt="Black and White Github icon" class="icon contact-icon" />
+                    <p><a href="https://github.com/shalomobed" target="_blank" rel="noopener noreferrer">Github</a>
+                    </p>
+                </div>
+            </div>
+        </section>
         <nav>
             <div class="nav-links-container">
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
+                    <li style="font-weight: bolder;">Jump to: </li>
+                    <li><a href="#profile">Hello:)</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#work-experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
-        <p>Built by Shalom Obed</p>
+        <p style="font-size: 25px;"> &copy; Built by Shalom Obed</p>
     </footer>
     <script src="script.js"></script>
 </body>
